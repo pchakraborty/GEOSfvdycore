@@ -10,20 +10,20 @@ env:
 
 cmake:
   local: ./@cmake
-  remote: ../ESMA_cmake.git
+  remote: git@github.com:pchakraborty/ESMA_cmake.git
   branch: feature/pchakrab/hierarchical-mepo
   develop: develop
 
 GMAO_Shared:
   local: ./src/Shared/@GMAO_Shared
-  remote: ../GMAO_Shared.git
+  remote: git@github.com:pchakraborty/GMAO_Shared.git
   branch: feature/pchakrab/hierarchical-mepo
   sparse: ./config/GMAO_Shared.sparse
   develop: main
 
 MAPL:
   local: ./src/Shared/@MAPL
-  remote: ../MAPL.git
+  remote: git@github.com:pchakraborty/MAPL.git
   branch: feature/pchakrab/hierarchical-mepo
   develop: develop
 
@@ -35,6 +35,6 @@ FMS:
 
 FVdycoreCubed_GridComp:
   local: ./src/Components/@FVdycoreCubed_GridComp
-  remote: ../FVdycoreCubed_GridComp.git
+  remote: git@github.com:pchakraborty/FVdycoreCubed_GridComp.git
   branch: feature/pchakrab/hierarchical-mepo
   develop: develop
