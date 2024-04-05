@@ -4,55 +4,37 @@ GEOSfvdycore:
 
 env:
   local: ./@env
-  remote: ../ESMA_env.git
+  remote: git@github.com:GEOS-ESM/ESMA_env.git
   tag: v4.25.1
   develop: main
 
 cmake:
   local: ./@cmake
   remote: ../ESMA_cmake.git
-  tag: v3.41.0
+  branch: feature/pchakrab/hierarchical-mepo
   develop: develop
-
-ecbuild:
-  local: ./@cmake/@ecbuild
-  remote: ../ecbuild.git
-  tag: geos/v1.3.0
 
 GMAO_Shared:
   local: ./src/Shared/@GMAO_Shared
   remote: ../GMAO_Shared.git
-  tag: v1.9.7
+  branch: feature/pchakrab/hierarchical-mepo
   sparse: ./config/GMAO_Shared.sparse
-  develop: main
-
-GEOS_Util:
-  local: ./src/Shared/@GMAO_Shared/@GEOS_Util
-  remote: ../GEOS_Util.git
-  tag: v2.0.5
   develop: main
 
 MAPL:
   local: ./src/Shared/@MAPL
   remote: ../MAPL.git
-  tag: v2.44.0
+  branch: feature/pchakrab/hierarchical-mepo
   develop: develop
 
 FMS:
   local: ./src/Shared/@FMS
-  remote: ../FMS.git
+  remote: git@github.com:GEOS-ESM/FMS.git
   tag: geos/2019.01.02+noaff.8
   develop: geos/release/2019.01
 
 FVdycoreCubed_GridComp:
   local: ./src/Components/@FVdycoreCubed_GridComp
   remote: ../FVdycoreCubed_GridComp.git
-  tag: v2.11.0
+  branch: feature/pchakrab/hierarchical-mepo
   develop: develop
-
-fvdycore:
-  local: ./src/Components/@FVdycoreCubed_GridComp/@fvdycore
-  remote: ../GFDL_atmos_cubed_sphere.git
-  tag: geos/v2.8.1
-  develop: geos/develop
-
