@@ -6,6 +6,7 @@
 /env/
 /env@/
 /.mepo/
+/.mepo3/
 parallel_build.o*
 log.*
 CMakeUserPresets.json
